@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vikash Raika Cafe | Crispy. Hot. Fresh.</title>
+<meta name="description" content="Golden fried chicken, stacked burgers and hot sides. Order online from Vikash Raika Cafe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo"><span class="logo-mark">VR</span> Vikash Raika <b>Cafe</b></a>
+  <nav class="links" id="links">
+    <a href="#menu">Menu</a><a href="#order">Order</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="cart-btn" id="openCart" aria-label="Open cart">Cart <span id="cartCount">0</span></button>
+  <button class="burger-btn" id="burgerBtn" aria-label="Menu"><i></i><i></i></button>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p class="badge">Fresh fried every hour</p>
+    <h1>Crack the<br>crunch.</h1>
+    <p class="sub">Hand-breaded chicken, double-stacked burgers and golden fries. Hot from our kitchen to your door.</p>
+    <div class="cta">
+      <a href="#menu" class="btn red">Order now</a>
+      <a href="#menu" class="btn ghost">See the menu</a>
+    </div>
+    <ul class="stats">
+      <li><b>30 min</b> average delivery</li>
+      <li><b>4.9</b> from 2,000+ reviews</li>
+      <li><b>11</b> spices, one recipe</li>
+    </ul>
+  </div>
+  <div class="stage" id="stage">
+    <div class="glow"></div>
+    <div class="burger3d" id="burger3d">
+      <div class="layer bun-top"><span></span></div>
+      <div class="layer lettuce"></div>
+      <div class="layer cheese"></div>
+      <div class="layer patty"></div>
+      <div class="layer sauce"></div>
+      <div class="layer bun-bot"></div>
+    </div>
+    <div class="float f1">🍗</div>
+    <div class="float f2">🍟</div>
+    <div class="float f3">🍗</div>
+  </div>
+</section>
+
+<div class="marquee"><div class="track">
+  <span>Crispy chicken</span><span>Double stack burgers</span><span>Hot wings</span><span>Golden fries</span><span>Ice cold shakes</span>
+  <span>Crispy chicken</span><span>Double stack burgers</span><span>Hot wings</span><span>Golden fries</span><span>Ice cold shakes</span>
+</div></div>
+
+<section class="section" id="menu">
+  <h2>The menu</h2>
+  <p class="lead">Tap a category, tap add. Your cart updates instantly.</p>
+  <div class="tabs" id="tabs"></div>
+  <div class="grid" id="menuGrid"></div>
+</section>
+
+<section class="section dark" id="order">
+  <h2>Order in three taps</h2>
+  <div class="steps">
+    <div><b>Pick</b><p>Add your favourites from the menu.</p></div>
+    <div><b>Details</b><p>Open the cart, enter your name and address.</p></div>
+    <div><b>Send</b><p>Your order goes straight to us on WhatsApp.</p></div>
+  </div>
+  <button class="btn red" id="openCart2">Open my cart</button>
+</section>
+
+<section class="section" id="reviews">
+  <h2>What our regulars say</h2>
+  <div class="reviews" id="reviewGrid"></div>
+</section>
+
+<section class="section dark" id="contact">
+  <h2>Come hungry</h2>
+  <div class="contact">
+    <div>
+      <p><b>Address</b><br><span data-cfg="address"></span></p>
+      <p><b>Hours</b><br><span data-cfg="hours"></span></p>
+      <p><b>Phone</b><br><a data-cfg-link="phone"></a></p>
+      <a class="btn red" id="waDirect" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+    <form id="msgForm" class="msg">
+      <input id="mName" placeholder="Your name" required>
+      <textarea id="mText" rows="4" placeholder="Your message" required></textarea>
+      <button class="btn ghost" type="submit">Send via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Vikash Raika Cafe. All rights reserved.</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Your cart">
+  <div class="drawer-head"><h3>Your order</h3><button id="closeCart" aria-label="Close">✕</button></div>
+  <div class="items" id="cartItems"></div>
+  <div class="checkout">
+    <input id="cName" placeholder="Your name">
+    <input id="cAddr" placeholder="Delivery address (leave empty for pickup)">
+    <div class="total"><span>Total</span><b id="cartTotal"></b></div>
+    <button class="btn wa" id="sendOrder">Order on WhatsApp</button>
+  </div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
