@@ -1,8 +1,8 @@
 /* ===== EDIT YOUR BUSINESS DETAILS HERE ===== */
 const CONFIG = {
-  whatsapp: "919999999999",          // country code + number, no + or spaces
-  phone: "+91 99999 99999",
-  address: "Your street address, City",
+  whatsapp: "+91 7849995988",          // country code + number, no + or spaces
+  phone: "+91 7849995988",
+  address: "hanumangarh",
   hours: "Every day, 10:00 AM to 11:00 PM",
   currency: "₹"
 };
